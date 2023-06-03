@@ -64,7 +64,6 @@ This is experimental results of HoGANet at different training set ratios.
 ---
 
 # HoGANet模型
-[![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 HoGANet 是用于立场检测或假新闻检测任务的图神经网络（GNN）模型。它是一种用于节点分类的同构图网络模型，修改自 [DGL](https://github.com/dmlc/dgl) 的示例。
 
