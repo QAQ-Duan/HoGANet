@@ -36,7 +36,7 @@ The demo datasets are tweets about US Presidential Election. Due to copyright is
 - Edge: If the node are retweeted-by a certain user and the user then publish a tweet, then a edge will be added between this tweet. So the connected tweet nodes means they are related.
 - Labels: Two labels $\{0,1\}$, means two stances of the tweets.
 - Features: We give two features for these tweets. One kind of feature is using bag of word and PCA. $Embedding \in R^{N \times 1000}$. The other kind of feature is computed by Bert-base-uncased. $Embedding \in R^{N \times 768}$. Here $N$ means the number of nodes. In our demo $N = 7439$.
-- graph: So we give a homogeneous graph with $num\_nodes=7439, num\_edges=221249$
+- graph: So we give a homogeneous graph with $NumNodes=7439, NumEdges=221249$
 
 ## Results 
 This is experimental results of HoGANet at different training set ratios.
@@ -99,8 +99,8 @@ HoGANet 是用于立场检测或假新闻检测任务的图神经网络（GNN）
 - 节点：图中的节点是推文。
 - 边：如果节点被某个用户转发并且该用户随后发布了一条推文，则这两个推文之间会有一条边。因此，相连的推文节点表示它们之间有关联。
 - 标签：两个标签 {0,1}，表示推文的两种立场。
-- 特征：我们为这些推文提供了两种特征。一种特征使用词袋模型和 PCA。嵌入形状为 $Embedding \in R^{N \times 1000}$。另一种特征是使用 Bert-base-uncased 模型计算得到的。嵌入形状为 $Embedding \in R^{N \times 768}$。这里的 N 表示节点的数量，对于演示数据集，N = 7439。
-- 图：因此，我们提供了一个具有 $num\_nodes=7439$、$num\_edges=221249$ 的同构图。
+- 特征：我们为这些推文提供了两种特征。一种特征使用词袋模型和 PCA。嵌入形状为 $Embedding \in R^{N \times 1000}$。另一种特征是使用 Bert-base-uncased 模型计算得到的。嵌入形状为 $Embedding \in R^{N \times 768}$。这里的 N 表示节点的数量，对于演示数据集，$N = 7439$。
+- 图：因此，我们提供了一个具有 $NumNodes=7439, NumEdges=221249$ 的同构图。
 
 ## 实验结果
 这是 HoGANet 在不同训练集比例下的实验结果。
